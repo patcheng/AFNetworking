@@ -172,6 +172,13 @@ forHTTPHeaderField:(NSString *)field;
  */
 - (void)clearAuthorizationHeader;
 
+/**
+ Sets the "Accept-Languages" HTTP header in request objects made by the HTTP client.
+ 
+ @param languages an array of NSLocale objects or NSString objects, where each string is a language ID.
+ */
+- (void)setAcceptLanguageHeader:(NSArray*)languages;
+
 ///-------------------------------------------------------
 /// @name Configuring Query String Parameter Serialization
 ///-------------------------------------------------------
